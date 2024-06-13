@@ -1,3 +1,4 @@
+/*General*/
 :root {
   --purple: #272044;
 }
@@ -12,6 +13,8 @@ body {
   max-width: 1400px;
   margin: 0 auto;
 }
+
+/*header*/
 header {
   background-image: linear-gradient(rgb(39, 32, 68, 0.6), rgb(39, 32, 68, 0.6)),
     url("/images/bg-hero.png");
@@ -58,10 +61,11 @@ header a {
   margin-top: 32px;
 }
 
+/*main section*/
 section {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 100px;
 }
 
 main {
@@ -102,10 +106,92 @@ main p {
   opacity: 0.7;
 }
 
-.first-img-responsive {
+.img-responsive {
   max-width: 100%;
 }
 
+/*second section*/
+#secondary {
+  background-color: #f8f8f8;
+}
+
+#secondary h3 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 5px;
+  color: var(--purple);
+  opacity: 0.3;
+  margin: 0;
+}
+
+#secondary h2 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.5;
+  text-align: center;
+  color: var(--purple);
+  margin: 0;
+}
+
+/*third section*/
+.grid-cafes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px;
+}
+
+.card {
+  background-color: white;
+  margin: 40px 0;
+}
+
+.card-body {
+  padding: 30px;
+}
+
+.card-footer {
+  padding: 0 30px 30px;
+}
+
+.btn {
+  display: block;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding: 16px;
+  background-color: #462cb3;
+  text-decoration: none;
+}
+
+.card h4 {
+  font-size: 24px;
+  line-height: 1;
+  color: var(--purple);
+  margin: 0;
+}
+
+.card h5 {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--purple);
+}
+
+.card p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--purple);
+  opacity: 0.7;
+}
+
+/*footer*/
 footer {
   background-image: linear-gradient(
       rgba(39, 32, 68, 0.9),
@@ -153,6 +239,7 @@ footer a {
   text-decoration: none;
 }
 
+/*media queries*/
 @media (max-width: 1300px) {
   section {
     padding: 60px;
@@ -189,9 +276,12 @@ footer a {
     grid-gap: 32px;
   }
 
+  .responsive-container {
+    text-align: center;
+  }
+
   section {
     padding: 30px;
-    text-align: center;
   }
 
   main h3 {
@@ -204,6 +294,11 @@ footer a {
 
   main p {
     font-size: 13px;
+  }
+
+  .grid-cafes {
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
   }
 
   footer .grid {
