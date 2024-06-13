@@ -1,6 +1,11 @@
+:root {
+  --purple: #272044;
+}
+
 body {
   margin: 0 auto;
   font-family: "Poppins";
+  background-color: var(--purple);
 }
 
 .container {
@@ -45,7 +50,7 @@ header a {
   line-height: 1.5;
   letter-spacing: 3px;
   text-transform: uppercase;
-  color: #272044;
+  color: var(--purple);
   text-decoration: none;
   background: white;
   padding: 16px 32px;
@@ -56,6 +61,49 @@ header a {
 section {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 100px 0;
+}
+
+main {
+  background-color: white;
+}
+
+.grid-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 60px;
+  align-items: center;
+  margin: 0 auto;
+}
+
+main h3 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 5px;
+  color: var(--purple);
+  opacity: 0.3;
+  margin: 0;
+}
+
+main h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.5;
+  color: var(--purple);
+  margin: 0;
+}
+
+main p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--purple);
+  opacity: 0.7;
+}
+
+.first-img-responsive {
+  max-width: 100%;
 }
 
 footer {
@@ -67,7 +115,6 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
-  padding: 100px 0;
 }
 
 footer .grid {
@@ -106,6 +153,20 @@ footer a {
   text-decoration: none;
 }
 
+@media (max-width: 1300px) {
+  section {
+    padding: 60px;
+  }
+
+  .grid-main {
+    grid-gap: 25px;
+  }
+
+  footer .grid {
+    grid-gap: 25px;
+  }
+}
+
 @media (max-width: 960px) {
   header {
     padding: 60px 0;
@@ -121,5 +182,44 @@ footer a {
 
   header h3 {
     font-size: 12px;
+  }
+
+  .grid-main {
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+  }
+
+  section {
+    padding: 30px;
+    text-align: center;
+  }
+
+  main h3 {
+    font-size: 12px;
+  }
+
+  main h2 {
+    font-size: 25px;
+  }
+
+  main p {
+    font-size: 13px;
+  }
+
+  footer .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+  }
+
+  footer h3 {
+    font-size: 17px;
+  }
+
+  footer p {
+    font-size: 14px;
+  }
+
+  footer li {
+    font-size: 14px;
   }
 }
