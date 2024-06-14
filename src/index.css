@@ -59,6 +59,11 @@ header a {
   padding: 16px 32px;
   display: inline-block;
   margin-top: 32px;
+  transition: all 200ms ease-in-out;
+}
+
+header a:hover {
+  color: crimson;
 }
 
 /*main section*/
@@ -135,7 +140,6 @@ main p {
   margin: 0;
 }
 
-/*third section*/
 .grid-cafes {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -178,6 +182,11 @@ main p {
   padding: 16px;
   background-color: #462cb3;
   text-decoration: none;
+  transition: all 200ms ease-in-out;
+}
+
+.btn:hover {
+  background-color: crimson;
 }
 
 .card h4 {
@@ -285,6 +294,11 @@ main p {
   font-weight: bolder;
   text-decoration: none;
   color: var(--purple);
+  transition: all 200ms ease-in-out;
+}
+
+#table a:hover {
+  color: crimson;
 }
 /*footer*/
 footer {
@@ -333,12 +347,11 @@ footer a {
   color: white;
   text-decoration: none;
   font-weight: bolder;
+  transition: all 200ms ease-in-out;
 }
 
-footer a {
-  color: white;
-  text-decoration: none;
-  font-weight: bolder;
+footer a:hover {
+  color: crimson;
 }
 
 /*media queries*/
