@@ -107,7 +107,7 @@ main p {
 }
 
 .img-responsive {
-  max-width: 100%;
+  width: 100%;
 }
 
 /*second section*/
@@ -145,6 +145,16 @@ main p {
 .card {
   background-color: white;
   margin: 40px 0;
+}
+
+.card-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.embed {
+  width: 100%;
+  aspect-ratio: 1/1;
 }
 
 .card-body {
@@ -299,6 +309,18 @@ footer a {
   .grid-cafes {
     grid-template-columns: 1fr;
     grid-gap: 30px;
+  }
+
+  .card-header {
+    grid-template-columns: 1fr;
+  }
+
+  .card-header img {
+    display: none;
+  }
+
+  .embed {
+    aspect-ratio: 16/9;
   }
 
   footer .grid {
