@@ -145,6 +145,7 @@ main p {
 .card {
   background-color: white;
   margin: 40px 0;
+  filter: drop-shadow(5px 3px 12px black);
 }
 
 .card-header {
@@ -233,6 +234,58 @@ main p {
   margin-top: 50px;
 }
 
+/*table section*/
+#table {
+  background: #f8f8f8;
+}
+
+#table h3 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 5px;
+  color: var(--purple);
+  opacity: 0.3;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+#table h2 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.5;
+  text-align: center;
+  color: var(--purple);
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+#table table {
+  color: var(--purple);
+  margin: 0 auto;
+  text-align: center;
+  border: 1px solid var(--purple);
+}
+
+#table td {
+  border-top: 1px solid var(--purple);
+  padding: 5px 10px;
+}
+
+#table th {
+  padding: 5px 10px;
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+#table a {
+  font-weight: bolder;
+  text-decoration: none;
+  color: var(--purple);
+}
 /*footer*/
 footer {
   background-image: linear-gradient(
@@ -279,6 +332,13 @@ footer li {
 footer a {
   color: white;
   text-decoration: none;
+  font-weight: bolder;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  font-weight: bolder;
 }
 
 /*media queries*/
